@@ -26,7 +26,8 @@ public class TipCalculator implements CalculatorInterface {
         } else {
             totalTip = LOW_TIP_RATE * bill;
         }
-        tipPerPerson = totalTip / numPeople;
+        //try without total tip per person
+        //tipPerPerson = totalTip / numPeople;
         mainView.updateView(totalTip,tipPerPerson);
     }
 }
